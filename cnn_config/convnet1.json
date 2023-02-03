@@ -1,0 +1,52 @@
+{
+  "training":
+  {
+    "epochs": 4,
+    "backup_period": 9999,
+    "shuffle_input": 0,
+    "minibatch_size": 128,
+    "learning_method":
+    {
+      "name": "adam_gd",
+      "args":
+      {
+        "epsilon": 0.001,
+        "rho1": 0.9,
+        "rho2": 0.999,
+        "c": 0.00000001
+      }
+    },
+    "cost_function": "categorical_cross_entropy"
+  },
+
+  "input":
+  {
+    "input_height": 28,
+    "input_width": 28,
+    "input_channels": 1
+  },
+
+  "convolutional":
+  {
+    "output_channels": 8,
+    "filter_size": 3,
+    "padding": 0,
+    "stride": 2,
+    "activation_function": "relu"
+  },
+
+  "maxpooling":
+  {
+    "size": 3,
+    "padding": 0,
+    "stride": 2
+  },
+
+  "flattening":
+  {
+  },
+
+  "softmax_output":
+  {
+  }
+}

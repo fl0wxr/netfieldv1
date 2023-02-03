@@ -1,0 +1,33 @@
+{
+  "training":
+  {
+    "epochs": 10,
+    "backup_period": 9999,
+    "shuffle_input": 0,
+    "minibatch_size": 1,
+    "learning_method":
+    {
+      "name": "regular_gd",
+      "args":
+      {
+        "learning_rate": 0.01
+      }
+    },
+    "cost_function": "categorical_cross_entropy"
+  },
+
+  "input":
+  {
+    "input_height": 7,
+    "input_width": 7,
+    "input_channels": 1
+  },
+
+  "flattening":
+  {
+  },
+
+  "softmax_output":
+  {
+  }
+}

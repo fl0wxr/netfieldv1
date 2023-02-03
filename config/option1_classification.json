@@ -1,0 +1,21 @@
+{
+  "dataset_parsing_mode": "four_files",
+
+  "training_set":
+  {
+    "training_features": "./datasets/MNIST/training_features_loc.txt",
+    "training_target_variables": "./datasets/MNIST/training_target_variables_loc.txt"
+  },
+
+  "val_set":
+  {
+    "val_features": "./datasets/MNIST/val_features_loc.txt",
+    "val_target_variables": "./datasets/MNIST/val_target_variables_loc.txt"
+  },
+
+  "normalize_input": 1,
+  "cnn_config": "./cnn_config/convnet1.json",
+  "class_names": "./classnames/MNIST_classnames.txt",
+  "lparams_save_dir": "./lparams",
+  "lparams_load_file": "./lparams/lpar.npy"
+}

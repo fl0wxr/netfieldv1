@@ -1,0 +1,1 @@
+./datasets/MNIST/training_set/train-images-idx3-ubyte

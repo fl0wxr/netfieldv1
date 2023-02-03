@@ -1,0 +1,1 @@
+./datasets/MNIST/val_set/t10k-labels-idx1-ubyte
